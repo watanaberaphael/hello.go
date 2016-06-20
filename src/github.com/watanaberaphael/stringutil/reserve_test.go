@@ -18,6 +18,13 @@ func TestReverse(t *testing.T) {
 			t.Errorf("Reverse(%q) == %q, want %q", c.in, got, c.want)
 		}		
 	}
+}
 
+func TestReverseAMessage(t *testing.T) {
 
+	message := Reverse("dlrow ,olleH")
+
+	if message != "Hello, world" {
+		t.Errorf("Reverse doesn't work")
+	}
 }
